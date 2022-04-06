@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<main>
+			<main>
 				<h2 class="main title">공지사항</h2>
 				
 				<div class="breadcrumb">
@@ -67,4 +67,4 @@
 						</table>
 					</div>			
 					
-			</main>	
+			</main>		
