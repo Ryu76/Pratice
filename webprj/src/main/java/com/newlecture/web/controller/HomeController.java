@@ -1,17 +1,25 @@
 package com.newlecture.web.controller;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 //     http://.../WEB
 @Controller 
 @RequestMapping("/")
 public class HomeController {
 	
-	@RequestMapping("index") //servlet.xml에서 mvc:annotation-driven 작성 
-	public String index() {
+	@RequestMapping("index") //servlet.xml에서 mvc:annotation-driven 작성
+	@ResponseBody
+	public String index(HttpServletResponse response) {
 		
-		return "root.index";
+		return "Hello Index1";
+//		return "root.index";
 	}
 	
 //	@Override
